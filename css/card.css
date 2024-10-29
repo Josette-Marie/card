@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.everything{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+   height:100vh;
+    background-color:hsl(30, 38%, 92%);
+   
+}
+
+.image img{
+    height:55vh;
+    margin-top: 0.2rem;
+    border: 1px solid white;
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+}
+.text{
+    border: 1px solid white;
+    padding:2rem;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    height:55vh;
+    
+}
+.text div{
+    margin-block: 1.5rem;
+    font-size: 2rem;
+    width:12ch;
+    color: hsl(212, 21%, 14%);
+    font-weight: bold;
+}
+.text .space{
+    letter-spacing: 0.5rem
+    
+}
+.article{
+    font-family: 'Montserrat', sans-serif;
+}
+article p{
+    width:30ch;
+    margin-bottom: 2rem;
+
+}
+.cost{
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+}
+.cost del{
+    font-size: 0.75rem;
+}
+.cost span{
+    color: hsl(158, 36%, 37%);;
+}
+button{
+    width:15vw;
+    padding:0.5rem;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    display: flex;
+    justify-content: center;
+   gap: 0.5rem;
+    
+}
+@media (max-width: 900px) {
+    .everything {
+      display: grid;
+      height:100vh;
+      }
+    .image img{
+        width: 90vw;
+        height:40vh;
+        border-top-right-radius: 10px;
+   border-top-left-radius: 10px;
+    }
+    .text{
+       width:90vw;
+       height: 70vh;
+        padding: 0.5rem;
+        border-bottom-left-radius:10px ;
+        border-bottom-right-radius: 10px;
+        display: grid;
+       
+    }
+    .text div{
+       width:16ch;
+    }
+    article p{
+        font-size: 1.25rem;
+    }
+    .cost span{
+        color: hsl(158, 36%, 37%);
+        font-size: 3rem;
+    }
+    button img{
+        width:30px;
+    }
+    button{
+        width:80vw;
+        padding:0.75rem;
+        font-size: 1.5em;
+        margin-bottom: 2rem;
+       border-radius:9px;
+       border-color: hsl(158, 36%, 37%); 
+        
+    }
+  }
+
+  
